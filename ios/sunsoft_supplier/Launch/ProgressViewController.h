@@ -1,0 +1,13 @@
+//
+//  ProgressViewController.h
+//  sunsoft_supplier
+//
+//  Created by ShawnWang on 2018/5/11.
+//  Copyright © 2018年 Facebook. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ProgressViewController : UIViewController
+
+@end

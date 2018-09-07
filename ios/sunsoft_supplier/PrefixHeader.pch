@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  sunsoft_supplier
+//
+//  Created by ShawnWang on 2018/5/8.
+//  Copyright © 2018年 Facebook. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "SSNetworkManager.h"
+#import <AFNetworking.h>
+#import <YYCategories.h>
+#import <Masonry.h>
+#import <YYModel.h>
+#import <SVProgressHUD.h>
+#import <UIImageView+WebCache.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "SSConfigure.h"
+#import "SSManager.h"
+#import "SSAccountManager.h"
+#import "SSStyleTool.h"
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
+#ifdef DEBUG
+#define SSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define SSLog(...)
+#define debugMethod()
+#endif
+
+#endif /* PrefixHeader_pch */

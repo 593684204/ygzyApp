@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">阳光智园厂商</string>
+    <!--无网提示语-->
+    <string name="no_net_des">网络已断开，请检查您的网络</string>
+    <!--更新-->
+    <string name="update_content_title">更新内容：</string>
+    <string name="update_btn">更新</string>
+    <string name="no_data">无更多数据内容</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RNActionTypeShowKeyboardTool</key>
+	<string>6</string>
+	<key>RNActionTypeHideKeyboardTool</key>
+	<string>5</string>
+	<key>toLogin:</key>
+	<string>4</string>
+	<key>forceUpdateApk:updateContentStr:</key>
+	<string>3</string>
+	<key>hideTabHost</key>
+	<string>0</string>
+	<key>showTabHost</key>
+	<string>1</string>
+	<key>toast:</key>
+	<string>2</string>
+</dict>
+</plist>

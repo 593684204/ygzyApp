@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:id="@+id/update_parent"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="#00000000"
+                                       android:gravity="center"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_rl_bg"
+        android:layout_width="@dimen/dimen_524"
+        android:layout_height="@dimen/dimen_715"
+        android:background="@drawable/common_update"
+        >
+
+        <ImageView
+            android:id="@+id/update_bg_iv"
+            android:layout_width="@dimen/dimen_524"
+            android:layout_height="@dimen/dimen_715"
+            />
+
+        <ImageView
+            android:id="@+id/update_img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:src="@drawable/update_close"/>
+
+        <ScrollView
+            android:id="@+id/update_sv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_200"
+            android:layout_marginBottom="@dimen/dimen_38"
+            android:layout_marginLeft="@dimen/dimen_100"
+            android:layout_marginRight="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/dimen_375"
+            android:scrollbars="none"
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/update_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_content_title"
+                    android:textColor="@color/update_content_text"
+                    android:textSize="@dimen/dimen_size_11"
+                    />
+
+                <TextView
+                    android:id="@+id/update_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_title"
+                    android:textColor="@color/update_content_text"
+                    android:textSize="@dimen/dimen_size_11"
+                    />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/update_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_200"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/progress_tv_toast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:text=""
+                        android:textColor="@color/splash_tv_pb"
+                        android:textSize="@dimen/dimen_20"
+                        />
+
+                    <TextView
+                        android:id="@+id/progress_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/splash_pb"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_50"
+                        android:text=""
+                        android:textColor="@color/splash_tv_pb"
+                        android:textSize="@dimen/dimen_20"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressbar_pb"
+                        style="@style/StyleProgressBarMini"
+                        android:layout_width="@dimen/dimen_300"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_tv"
+                        android:background="@drawable/progress_bg"
+                        android:max="100"
+                        android:progress="0"
+                        />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/update_btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:background="@drawable/update_bt"
+            android:gravity="center"
+            android:text="@string/update_btn"
+            android:textColor="@color/common_white"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

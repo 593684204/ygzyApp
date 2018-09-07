@@ -1,0 +1,22 @@
+target 'sunsoft_supplier' do
+pod 'YYCategories'
+pod 'YYModel'
+pod 'AFNetworking'
+pod 'SSZipArchive'
+pod 'Masonry'
+pod 'UICKeyChainStore'
+pod 'SVProgressHUD'
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'OHHTTPStubs'
+pod 'UMengAnalytics'
+
+  pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image'
+
+  pod 'Picker', :path => '../node_modules/react-native-picker'
+
+  pod 'JPushRN', :path => '../node_modules/jpush-react-native'
+
+  pod 'JCoreRN', :path => '../node_modules/jcore-react-native'
+
+end
